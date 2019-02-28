@@ -38,10 +38,20 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void TestMethod4()
         {
-            double a = 2;
+            double a = 2; 
             bool grado_attesa = true;
             bool grado = EquazioniLibrary.Equazioni.isDegree2(a);
             Assert.AreEqual(grado_attesa, grado);
+        }
+
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            double a = 0,b=1,c=3;
+            double delta_atteso=1;
+            double delta = EquazioniLibrary.Equazioni.Delta(a,b,c);
+            Assert.AreEqual(delta_atteso, delta);
         }
     }
     
