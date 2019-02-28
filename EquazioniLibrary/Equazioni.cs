@@ -30,11 +30,22 @@ namespace EquazioniLibrary
                 if(b!=0)
                 {
                     impossibile = true;
-                }
-                
+                } 
             }
-            
             return impossibile;
+        }
+
+        static public bool isIndeterminata(double a, double b)
+        {
+            bool indeterminata = false;
+            if (a == 0)
+            {
+                if (b == 0)
+                {
+                    indeterminata = true;
+                }
+            }
+            return indeterminata;
         }
     }
 }

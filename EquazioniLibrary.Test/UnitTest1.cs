@@ -25,6 +25,15 @@ namespace EquazioniLibrary.Test
             bool impossibile = EquazioniLibrary.Equazioni.isInconsisted(a, b);
             Assert.AreEqual(impossibile_attesa, impossibile);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            double a = 0, b = 0;
+            bool indeterminata_attesa = true;
+            bool indeterminata = EquazioniLibrary.Equazioni.isIndeterminata(a, b);
+            Assert.AreEqual(indeterminata_attesa, indeterminata);
+        }
     }
     
 }
