@@ -14,7 +14,16 @@ namespace EquazioniLibrary.Test
             bool determinata_attesa = true;
             bool determinata = EquazioniLibrary.Equazioni.isDetermined(a);
             Assert.AreEqual(determinata_attesa, determinata);
+            
+        }
 
+        [TestMethod]
+        public void TestMethod2()
+        {
+            double a = 0, b = 3;
+            bool impossibile_attesa = true;
+            bool impossibile = EquazioniLibrary.Equazioni.isInconsisted(a, b);
+            Assert.AreEqual(impossibile_attesa, impossibile);
         }
     }
     

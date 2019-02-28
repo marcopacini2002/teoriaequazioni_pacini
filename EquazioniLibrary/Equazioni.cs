@@ -21,5 +21,20 @@ namespace EquazioniLibrary
             }
             return determinata;
         }
+
+        static public bool isInconsisted(double a,double b)
+        {
+            bool impossibile=false;
+            if(a==0)
+            {
+                if(b!=0)
+                {
+                    impossibile = true;
+                }
+                
+            }
+            
+            return impossibile;
+        }
     }
 }
