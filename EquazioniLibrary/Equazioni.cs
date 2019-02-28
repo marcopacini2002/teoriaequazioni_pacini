@@ -47,5 +47,15 @@ namespace EquazioniLibrary
             }
             return indeterminata;
         }
+
+        static public bool isDegree2(double a)
+        {
+            bool grado2=false;
+            if (a != 0)
+            {
+                grado2 = true;
+            }
+            return grado2;
+        }
     }
 }

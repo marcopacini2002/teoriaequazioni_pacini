@@ -34,6 +34,15 @@ namespace EquazioniLibrary.Test
             bool indeterminata = EquazioniLibrary.Equazioni.isIndeterminata(a, b);
             Assert.AreEqual(indeterminata_attesa, indeterminata);
         }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            double a = 2;
+            bool grado_attesa = true;
+            bool grado = EquazioniLibrary.Equazioni.isDegree2(a);
+            Assert.AreEqual(grado_attesa, grado);
+        }
     }
     
 }
