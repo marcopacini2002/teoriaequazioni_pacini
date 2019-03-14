@@ -12,7 +12,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 0;
             bool risposta_attesa = false;
-            bool test = EquazioniLibrary.Equazioni.determinata(a);
+            bool test = EquazioniLibrary.Equazioni.isDetermined(a);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -22,7 +22,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 2;
             bool risposta_attesa = true;
-            bool test = EquazioniLibrary.Equazioni.determinata(a);
+            bool test = EquazioniLibrary.Equazioni.isDetermined(a);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -32,7 +32,7 @@ namespace EquazioniLibrary.Test
         {
             double a = -1;
             bool risposta_attesa = true;
-            bool test = EquazioniLibrary.Equazioni.determinata(a);
+            bool test = EquazioniLibrary.Equazioni.isDetermined(a);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -89,7 +89,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 0, b = 0;
             bool risposta_attesa = true;
-            bool test = EquazioniLibrary.Equazioni.Indeterminata(a, b);
+            bool test = EquazioniLibrary.Equazioni.isInconsisted(a, b);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -100,7 +100,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 2, b = 0;
             bool risposta_attesa = false;
-            bool test = EquazioniLibrary.Equazioni.Indeterminata(a, b);
+            bool test = EquazioniLibrary.Equazioni.isInconsisted(a, b);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -110,7 +110,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 0, b = 2;
             bool risposta_attesa = false;
-            bool test = EquazioniLibrary.Equazioni.Indeterminata(a, b);
+            bool test = EquazioniLibrary.Equazioni.isInconsisted(a, b);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -120,7 +120,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 2, b = 2;
             bool risposta_attesa = false;
-            bool test = EquazioniLibrary.Equazioni.Indeterminata(a, b);
+            bool test = EquazioniLibrary.Equazioni.isInconsisted(a, b);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -135,7 +135,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 3;
             bool risposta_attesa = true;
-            bool test = EquazioniLibrary.Equazioni.Controllo(a);
+            bool test = EquazioniLibrary.Equazioni.isDegree2(a);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -146,7 +146,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 0;
             bool risposta_attesa = false;
-            bool test = EquazioniLibrary.Equazioni.Controllo(a);
+            bool test = EquazioniLibrary.Equazioni.isDegree2(a);
 
             Assert.AreEqual(risposta_attesa, test);
 
@@ -156,7 +156,7 @@ namespace EquazioniLibrary.Test
         {
             double a = -1;
             bool risposta_attesa = true;
-            bool test = EquazioniLibrary.Equazioni.Controllo(a);
+            bool test = EquazioniLibrary.Equazioni.isDegree2(a);
 
             Assert.AreEqual(risposta_attesa, test);
 

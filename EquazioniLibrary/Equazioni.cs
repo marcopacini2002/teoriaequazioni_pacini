@@ -22,7 +22,7 @@ namespace EquazioniLibrary
             return determinata;
         }
 
-        static public bool isInconsisted(double a,double b)
+        static public bool Impossibile(double a,double b)
         {
             bool impossibile=false;
             if(a==0)
@@ -35,7 +35,7 @@ namespace EquazioniLibrary
             return impossibile;
         }
 
-        static public bool isIndeterminata(double a, double b)
+        static public bool isInconsisted(double a, double b)
         {
             bool indeterminata = false;
             if (a == 0)
@@ -69,7 +69,7 @@ namespace EquazioniLibrary
         static public string Equazione(double a, double b)
         {
             string risultato = "";
-            if (isIndeterminata(a, b) == true) risultato = "Indeterminato";
+            if (Impossibile(a, b) == true) risultato = "Indeterminato";
             if (isInconsisted(a, b) == true) risultato = "Impossibile";
 
 
