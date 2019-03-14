@@ -64,5 +64,23 @@ namespace EquazioniLibrary
             risultato = (b * b) - (4 * a * c);
             return risultato;
         }
+
+
+        static public string Equazione(double a, double b)
+        {
+            string risultato = "";
+            if (isIndeterminata(a, b) == true) risultato = "Indeterminato";
+            if (isInconsisted(a, b) == true) risultato = "Impossibile";
+
+
+            if (risultato == "")
+            {
+                risultato = $"x={-b / a}";
+
+
+            }
+
+            return risultato;
+        }
     }
 }
